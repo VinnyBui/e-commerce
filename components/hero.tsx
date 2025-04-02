@@ -1,5 +1,6 @@
 "use client"
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 const Hero = () => {
   return (
@@ -12,7 +13,7 @@ const Hero = () => {
           animate={{ opacity: 1}}
           transition={{ duration: 2, delay: 0.5 }}       
         >
-          OPTIMIZING PRODUCTIVITY, ONE STEP AT A TIME
+          BEGIN YOUR REFINEMENT JOURNEY TODAY
         </motion.h1>
       </div>
 
@@ -25,6 +26,16 @@ const Hero = () => {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 2, delay: 0.5 }}
       />
+
+      {/* goat in the bottom right */}
+      <motion.div 
+        className="absolute bottom-0 right-0 text-primary font-semibold"
+        initial={{ opacity: 0}}
+        animate={{ opacity: 1}}
+        transition={{ duration: 2, delay: 0.5 }}    
+      >
+        <Image alt="goat" src="/goat.png" width={150} height={100}/>
+      </motion.div>
     </section>
   );
 };
