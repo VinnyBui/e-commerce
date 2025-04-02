@@ -3,17 +3,17 @@ import { motion } from 'framer-motion';
 
 const Hero = () => {
   return (
-    <section className="w-full h-screen flex justify-center items-center relative">
+    <section className="w-full h-screen flex justify-center items-center relative ">
       {/* Text in the top left */}
       <div className="absolute top-10 left-10 text-primary font-semibold">
-        <motion.p 
+        <motion.h1 
           className="text-[0.8rem] md:text-lg"
           initial={{ opacity: 0}}
           animate={{ opacity: 1}}
           transition={{ duration: 2, delay: 0.5 }}       
         >
           OPTIMIZING PRODUCTIVITY, ONE STEP AT A TIME
-        </motion.p>
+        </motion.h1>
       </div>
 
       {/* Logo in the center */}
